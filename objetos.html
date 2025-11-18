@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos, Propiedades y Métodos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Objetos, Propiedades y Métodos</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>🏗️ ¿Qué es un objeto?</h2>
+      <p>
+        Un <strong>objeto</strong> es una colección de datos y funciones agrupadas bajo un mismo nombre.  
+        Los datos se almacenan en <strong>propiedades</strong> y las funciones dentro del objeto se llaman <strong>métodos</strong>.
+      </p>
+      <pre><code>
+        let persona = {
+          nombre: "Jean",
+          edad: 21,
+          saludar: function() {
+            alert("Hola, soy " + this.nombre);
+          }
+        };
+      </code></pre>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🧩 Ejemplos de objetos, propiedades y métodos</h2>
+
+      <div class="card">
+        <h3>1️⃣ Crear un objeto simple</h3>
+        <p>Un objeto puede tener varias propiedades con diferentes tipos de datos.</p>
+        <pre><code>
+            let coche = {
+              marca: "Toyota",
+              modelo: "Corolla",
+              año: 2020
+            };
+        </code></pre>
+        <button onclick="ejemploObjetoSimple()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ Acceder a propiedades</h3>
+        <p>Podemos acceder a las propiedades usando punto (.) o corchetes [].</p>
+        <pre><code>
+            alert(coche.marca);
+            alert(coche["modelo"]);
+        </code></pre>
+        <button onclick="ejemploAccederPropiedades()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ Modificar propiedades</h3>
+        <p>Podemos cambiar el valor de una propiedad o agregar nuevas.</p>
+        <pre><code>
+            coche.color = "Rojo";
+            coche.año = 2023;
+        </code></pre>
+        <button onclick="ejemploModificarPropiedades()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>4️⃣ Agregar métodos</h3>
+        <p>Los métodos son funciones dentro del objeto que pueden usar <code>this</code>.</p>
+        <pre><code>
+            let persona = {
+              nombre: "Jean",
+              saludar: function() {
+                alert("Hola, soy " + this.nombre);
+              }
+            };
+            persona.saludar();
+        </code></pre>
+        <button onclick="ejemploMetodo()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>5️⃣ Objetos anidados</h3>
+        <p>Un objeto puede contener otros objetos dentro.</p>
+        <pre><code>
+            let estudiante = {
+              nombre: "Héctor",
+              direccion: {
+                ciudad: "México",
+                cp: 12345
+              }
+            };
+            alert(estudiante.direccion.ciudad);
+        </code></pre>
+        <button onclick="ejemploObjetoAnidado()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>6️⃣ Recorrer propiedades con for...in</h3>
+        <p>Podemos recorrer todas las propiedades de un objeto usando un bucle.</p>
+        <pre><code>
+            for (let propiedad in coche) {
+              console.log(propiedad + ": " + coche[propiedad]);
+            }
+        </code></pre>
+        <button onclick="ejemploRecorrerObjeto()">Probar ejemplo</button>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

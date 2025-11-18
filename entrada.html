@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrada y salida de datos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Entrada y Salida de Datos</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>📥 ¿Qué es la entrada de datos?</h2>
+      <p>
+        La <strong>entrada de datos</strong> consiste en obtener información desde el usuario o desde alguna fuente externa.
+        En JavaScript, los métodos más comunes son:
+      </p>
+      <ul>
+        <li><code>prompt()</code> → Muestra un cuadro de texto para que el usuario ingrese información.</li>
+        <li><code>confirm()</code> → Muestra una pregunta con opciones Aceptar/Cancelar.</li>
+        <li><code>HTML inputs</code> → Permiten ingresar datos directamente en la página.</li>
+      </ul>
+    </section>
+
+    <section class="info">
+      <h2>📤 ¿Qué es la salida de datos?</h2>
+      <p>
+        La <strong>salida de datos</strong> consiste en mostrar información al usuario.  
+        Los métodos más usados son:
+      </p>
+      <ul>
+        <li><code>alert()</code> → Muestra un mensaje emergente.</li>
+        <li><code>console.log()</code> → Muestra información en la consola del navegador (útil para pruebas).</li>
+        <li><code>document.write()</code> → Escribe directamente en el documento HTML.</li>
+      </ul>
+    </section>
+
+    <section class="ejemplos">
+      <h2>💻 Ejemplos prácticos</h2>
+
+      <div class="card">
+        <h3>1️⃣ Entrada con prompt()</h3>
+        <p>Pide al usuario su nombre y lo muestra con un mensaje de bienvenida.</p>
+        <pre><code>
+let nombre = prompt("¿Cómo te llamas?");
+alert("Hola " + nombre + "!");
+        </code></pre>
+        <button onclick="ejemploPrompt()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ Confirmación con confirm()</h3>
+        <p>Usa confirm para hacer una pregunta con respuesta de Sí o No.</p>
+        <pre><code>
+let continuar = confirm("¿Deseas continuar?");
+alert("Tu respuesta fue: " + continuar);
+        </code></pre>
+        <button onclick="ejemploConfirm()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ Mostrar en consola</h3>
+        <p>Muestra información en la consola (usa <code>console.log()</code>).</p>
+        <pre><code>
+console.log("Este es un mensaje en la consola");
+        </code></pre>
+        <button onclick="ejemploConsola()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>4️⃣ Escribir en el documento</h3>
+        <p>Usa <code>document.write()</code> para mostrar texto directamente en la página.</p>
+        <pre><code>
+document.write("Hola desde JavaScript!");
+        </code></pre>
+        <button onclick="ejemploDocumento()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>5️⃣ Entrada desde HTML</h3>
+        <p>Obtiene texto de un campo y lo muestra en pantalla sin usar ventanas emergentes.</p>
+        <input type="text" id="inputNombre" placeholder="Escribe tu nombre">
+        <button onclick="mostrarDesdeInput()">Mostrar nombre</button>
+        <p id="resultadoInput" class="resultado"></p>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

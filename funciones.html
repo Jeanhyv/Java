@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones en JavaScript</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Funciones</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>🧩 ¿Qué es una función?</h2>
+      <p>
+        Una <strong>función</strong> es un bloque de código que realiza una tarea específica.  
+        Se puede ejecutar varias veces sin tener que escribir el mismo código de nuevo.
+      </p>
+      <p>
+        En JavaScript, las funciones pueden:
+      </p>
+      <ul>
+        <li>Recibir datos (parámetros).</li>
+        <li>Procesar esos datos.</li>
+        <li>Devolver un resultado (valor de retorno).</li>
+      </ul>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🧮 Declaración de funciones</h2>
+
+      <div class="card">
+        <h3>1️⃣ Función simple</h3>
+        <p>Una función básica que muestra un mensaje.</p>
+        <pre><code>
+function saludar() {
+  alert("¡Hola desde una función!");
+}
+        </code></pre>
+        <button onclick="ejemploFuncionSimple()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ Función con parámetros</h3>
+        <p>Las funciones pueden recibir datos externos.</p>
+        <pre><code>
+function sumar(a, b) {
+  return a + b;
+}
+        </code></pre>
+        <button onclick="ejemploFuncionParametros()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ Función con retorno</h3>
+        <p>Una función puede devolver un valor con <code>return</code>.</p>
+        <pre><code>
+function multiplicar(x, y) {
+  return x * y;
+}
+let resultado = multiplicar(4, 5);
+alert("El resultado es: " + resultado);
+        </code></pre>
+        <button onclick="ejemploFuncionRetorno()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>4️⃣ Función anónima</h3>
+        <p>Se puede asignar una función a una variable.</p>
+        <pre><code>
+const saludarAnonimo = function() {
+  alert("Hola desde una función anónima");
+};
+        </code></pre>
+        <button onclick="ejemploFuncionAnonima()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>5️⃣ Función flecha (arrow function)</h3>
+        <p>Una forma más corta de escribir funciones en JavaScript.</p>
+        <pre><code>
+const saludarFlecha = (nombre) => {
+  return "Hola " + nombre + "!";
+};
+alert(saludarFlecha("Jean"));
+        </code></pre>
+        <button onclick="ejemploFuncionFlecha()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>6️⃣ Función que llama a otra función</h3>
+        <p>Las funciones pueden usar otras funciones para realizar tareas más complejas.</p>
+        <pre><code>
+function cuadrado(num) {
+  return num * num;
+}
+function mostrarResultado() {
+  alert("El cuadrado de 4 es " + cuadrado(4));
+}
+        </code></pre>
+        <button onclick="ejemploFuncionAnidada()">Probar ejemplo</button>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

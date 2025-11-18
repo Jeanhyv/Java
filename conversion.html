@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversión de Tipos de Expresiones</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Conversión de Tipos de Expresiones</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>📘 ¿Qué es la conversión de tipos?</h2>
+      <p>
+        La <strong>conversión de tipos</strong> ocurre cuando un valor cambia de un tipo de dato a otro.
+        Esto puede hacerse de forma <strong>explícita</strong> (intencional por el programador) o
+        <strong>implícita</strong> (automáticamente por el lenguaje).
+      </p>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🔄 Conversión Explícita</h2>
+
+      <div class="card">
+        <h3>1️⃣ Convertir a número</h3>
+        <p>Podemos usar <code>Number()</code> para transformar texto en número.</p>
+        <pre><code>let num = Number("25");</code></pre>
+        <button onclick="convertirNumero()">Probar conversión</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ Convertir a cadena</h3>
+        <p>Usando <code>String()</code> o concatenación.</p>
+        <pre><code>let texto = String(123);</code></pre>
+        <button onclick="convertirCadena()">Probar conversión</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ Convertir a booleano</h3>
+        <p>Con <code>Boolean()</code> puedes convertir valores a verdadero o falso.</p>
+        <pre><code>Boolean(0) → false  
+            Boolean("hola") → true</code></pre>
+        <button onclick="convertirBooleano()">Probar conversión</button>
+      </div>
+    </section>
+
+    <section class="ejemplos">
+      <h2>⚙️ Conversión Implícita (Coerción de tipos)</h2>
+
+      <div class="card">
+        <h3>💡 Suma entre cadena y número</h3>
+        <p>JavaScript convierte el número a texto cuando hay una cadena.</p>
+        <pre><code>"5" + 2 → "52"</code></pre>
+        <button onclick="coercionSuma()">Probar coerción</button>
+      </div>
+
+      <div class="card">
+        <h3>🧮 Resta entre cadena y número</h3>
+        <p>En este caso, JavaScript intenta convertir la cadena a número.</p>
+        <pre><code>"10" - 5 → 5</code></pre>
+        <button onclick="coercionResta()">Probar coerción</button>
+      </div>
+
+      <div class="card">
+        <h3>⚖️ Comparación con ==</h3>
+        <p>El operador <code>==</code> convierte tipos antes de comparar.</p>
+        <pre><code>0 == false → true  
+            "5" == 5 → true</code></pre>
+        <button onclick="coercionComparacion()">Probar comparación</button>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

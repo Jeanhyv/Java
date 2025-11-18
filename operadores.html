@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operadores y Expresiones</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Operadores y Expresiones</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>📘 ¿Qué son los operadores y expresiones?</h2>
+      <p>
+        Una <strong>expresión</strong> es cualquier combinación de valores, variables
+        y operadores que produce un resultado.  
+        Los <strong>operadores</strong> son los símbolos que permiten realizar operaciones sobre esos valores.
+      </p>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🧮 Tipos de Operadores</h2>
+
+      <div class="card">
+        <h3>1️⃣ Aritméticos</h3>
+        <p>Permiten realizar operaciones matemáticas básicas.</p>
+        <pre><code>+, -, *, /, %, ++, --</code></pre>
+        <button onclick="ejemploAritmetico()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ De Asignación</h3>
+        <p>Sirven para asignar valores a variables.</p>
+        <pre><code>=, +=, -=, *=, /=, %=</code></pre>
+        <button onclick="ejemploAsignacion()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ Comparación</h3>
+        <p>Comparan dos valores y devuelven un resultado booleano.</p>
+        <pre><code>==, ===, !=, !==, >, <, >=, <=</code></pre>
+        <button onclick="ejemploComparacion()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>4️⃣ Lógicos</h3>
+        <p>Permiten combinar o negar condiciones.</p>
+        <pre><code>&& (AND), || (OR), ! (NOT)</code></pre>
+        <button onclick="ejemploLogico()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>5️⃣ De Concatenación</h3>
+        <p>Usados para unir cadenas de texto.</p>
+        <pre><code>"Hola " + "Mundo"</code></pre>
+        <button onclick="ejemploConcatenacion()">Probar ejemplo</button>
+      </div>
+    </section>
+
+    <section class="ejemplos">
+      <h2>⚙️ Operadores con Diferentes Semánticas (Funciones)</h2>
+
+      <div class="card">
+        <h3>🧠 Operador +</h3>
+        <p>Puede sumar números o concatenar cadenas.</p>
+        <pre><code>
+            5 + 10 → 15
+            "Hola" + " Mundo" → "Hola Mundo"
+        </code></pre>
+        <button onclick="ejemploMas()">Probar operador +</button>
+      </div>
+
+      <div class="card">
+        <h3>🧮 Operador == vs ===</h3>
+        <p><strong>==</strong> compara solo valores, <strong>===</strong> compara tipo y valor.</p>
+        <pre><code>
+            5 == "5" → true
+            5 === "5" → false
+        </code></pre>
+        <button onclick="ejemploComparacionEstricta()">Probar comparación</button>
+      </div>
+
+      <div class="card">
+        <h3>🔁 Operador ternario (?:)</h3>
+        <p>Sirve para evaluar una condición de forma compacta.</p>
+        <pre><code>
+            let edad = 18;
+            let mensaje = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
+        </code></pre>
+        <button onclick="ejemploTernario()">Probar ternario</button>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

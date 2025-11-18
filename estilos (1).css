@@ -1,0 +1,89 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eceff4;
+  margin: 0;
+  padding: 0;
+  color: #2e3440;
+}
+
+/* Encabezado */
+header {
+  background-color: #4c78ff;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #3454d1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+}
+
+/* Secciones */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Bloques de información */
+.info {
+  background-color: #fff;
+  padding: 1.2rem 1.8rem;
+  border-radius: 14px;
+  border: 1px solid #d8dee9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+/* Tarjetas de ejemplos */
+.ejemplos .card {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid #d8dee9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ejemplos .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* Botones */
+button {
+  background-color: #4c78ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #3454d1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Pie de página */
+footer {
+  background-color: #3b4252;
+  color: #eceff4;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

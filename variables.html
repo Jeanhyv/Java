@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Variables</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>📘 ¿Qué es una variable?</h2>
+      <p>
+        Una <strong>variable</strong> es un contenedor que guarda información o valores que pueden cambiar durante la ejecución de un programa.
+        En JavaScript se pueden declarar con <code>var</code>, <code>let</code> o <code>const</code>.
+      </p>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🧩 Tipos de declaración de variables</h2>
+
+      <div class="card">
+        <h3>1️⃣ var</h3>
+        <p>
+          <strong>var</strong> es la forma más antigua de declarar variables.  
+          Tiene <em>alcance de función</em> y permite redeclaraciones.
+        </p>
+        <pre><code>var nombre = "Jean";</code></pre>
+        <button onclick="ejemploVar()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ let</h3>
+        <p>
+          <strong>let</strong> tiene <em>alcance de bloque</em> y no puede redeclararse dentro del mismo ámbito.
+        </p>
+        <pre><code>let edad = 21;</code></pre>
+        <button onclick="ejemploLet()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ const</h3>
+        <p>
+          <strong>const</strong> se usa para valores que no cambian.  
+          Una vez asignado, no puede modificarse.
+        </p>
+        <pre><code>const pais = "México";</code></pre>
+        <button onclick="ejemploConst()">Probar ejemplo</button>
+      </div>
+    </section>
+
+    <section class="ejemplos">
+      <h2>⚙️ Comportamientos especiales</h2>
+
+      <div class="card">
+        <h3>💡 Hoisting con var</h3>
+        <p>Las variables declaradas con <code>var</code> se “elevan” (hoisting) antes de su ejecución.</p>
+        <pre><code>
+console.log(x); // undefined
+var x = 5;
+        </code></pre>
+        <button onclick="ejemploHoisting()">Probar ejemplo</button>
+      </div>
+
+      <div class="card">
+        <h3>🔒 let y const dentro de bloques</h3>
+        <p>
+          Las variables declaradas con <code>let</code> y <code>const</code> solo existen dentro del bloque donde fueron declaradas.
+        </p>
+        <pre><code>
+{
+  let a = 10;
+  const b = 20;
+}
+console.log(a); // Error
+        </code></pre>
+        <button onclick="ejemploBloques()">Probar ejemplo</button>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

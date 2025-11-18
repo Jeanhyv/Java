@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipos de Datos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Tipos de Datos</h1>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>📘 ¿Qué son los tipos de datos?</h2>
+      <p>
+        Los <strong>tipos de datos</strong> son las diferentes clases de valores
+        que podemos manejar en un programa. Se dividen principalmente en:
+        <strong>Tipos primitivos</strong> y <strong>Objetos</strong>.
+      </p>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🧩 Tipos de Datos Primitivos</h2>
+
+      <div class="card">
+        <h3>1️⃣ String (Cadenas de texto)</h3>
+        <p>Representan texto. Se escriben entre comillas.</p>
+        <pre><code>let nombre = "Jean";</code></pre>
+        <button onclick="mostrarTipo('Jean')">Ver tipo</button>
+      </div>
+
+      <div class="card">
+        <h3>2️⃣ Number (Números)</h3>
+        <p>Incluyen enteros y decimales.</p>
+        <pre><code>let edad = 21;</code></pre>
+        <button onclick="mostrarTipo(21)">Ver tipo</button>
+      </div>
+
+      <div class="card">
+        <h3>3️⃣ Boolean (Booleanos)</h3>
+        <p>Solo tienen dos valores: <strong>true</strong> o <strong>false</strong>.</p>
+        <pre><code>let activo = true;</code></pre>
+        <button onclick="mostrarTipo(true)">Ver tipo</button>
+      </div>
+
+      <div class="card">
+        <h3>4️⃣ Undefined</h3>
+        <p>Indica que una variable ha sido declarada pero no tiene valor.</p>
+        <pre><code>let x;</code></pre>
+        <button onclick="mostrarTipo(undefined)">Ver tipo</button>
+      </div>
+
+      <div class="card">
+        <h3>5️⃣ Null</h3>
+        <p>Representa la ausencia intencional de un valor.</p>
+        <pre><code>let vacio = null;</code></pre>
+        <button onclick="mostrarTipo(null)">Ver tipo</button>
+      </div>
+
+      <div class="card">
+        <h3>6️⃣ Symbol</h3>
+        <p>Identificadores únicos y seguros, útiles para objetos.</p>
+        <pre><code>let id = Symbol("id");</code></pre>
+        <button onclick="mostrarTipo(Symbol('id'))">Ver tipo</button>
+      </div>
+
+      <div class="card">
+        <h3>7️⃣ BigInt</h3>
+        <p>Permite trabajar con números enteros muy grandes.</p>
+        <pre><code>let numeroGrande = 12345678901234567890n;</code></pre>
+        <button onclick="mostrarTipo(12345678901234567890n)">Ver tipo</button>
+      </div>
+    </section>
+
+    <section class="ejemplos">
+      <h2>🧱 Objetos y Valores</h2>
+
+      <div class="card">
+        <h3>📦 Objeto</h3>
+        <p>Un objeto agrupa datos mediante pares <strong>clave: valor</strong>.</p>
+        <pre><code>
+let persona = {
+  nombre: "Jean",
+  edad: 21,
+  activo: true
+};
+        </code></pre>
+        <button onclick="mostrarObjeto()">Mostrar objeto</button>
+      </div>
+
+      <div class="card">
+        <h3>📚 Arreglo (Array)</h3>
+        <p>Conjunto ordenado de valores.</p>
+        <pre><code>let numeros = [10, 20, 30];</code></pre>
+        <button onclick="mostrarArreglo()">Mostrar arreglo</button>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
